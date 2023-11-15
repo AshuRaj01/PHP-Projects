@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Page</title>
+<link rel="stylesheet" href="login.css">
+<style>
+    nav
+    {
+        background-color: white;
+        border: 1px solid white;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="navlogo">
+            <h1>Namaste Bharat</h1>
+        </div>
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+        </ul>
+    </nav>
+        <div class="container2">
+            <form action="login.php" id="login" method="post" onsubmit="return submitData();">
+                <table>
+                    <thead>
+                        <th colspan="2">
+                            Log In
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Email ID</td>
+                            <td>
+                                <input type="email" name="uemail" id="email"><br>
+                                <span id="errorE"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>
+                                <input type="password" name="upass" id="pass"><br>  
+                                <span id="errorP"></span>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td colspan="2"><button type="submit">Submit</button>
+                            <br>
+                            <a href="#" style="text-align: right; font-size: 18px; padding-left: 350px;">Forget Password?</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p style="font-size: 18px; text-align: center;">Don't have an Account? <a href="registration.html" style="font-weight: bold; font-size:20px; text-decoration: none;">Sign Up</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>Footer Part</p>
+</footer>
+<script src="login.js"></script>
+</body>
+</html>
